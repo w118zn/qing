@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import {increment, decrement} from "../reducer/hosts.reducer";
 
 @connect(
-    state => ({counter:state}),
+    state => state.instances,
     {increment,decrement}
 )
 export class Overr extends React.Component{
@@ -12,7 +12,7 @@ export class Overr extends React.Component{
     return(
       <div>
           <p>
-              我是总览{this.props.counter.number}
+              我是总览{this.props.number}
           </p>
           <Button onClick={this.props.increment}>加数</Button>
           <Button onClick={this.props.decrement}>减数</Button>
