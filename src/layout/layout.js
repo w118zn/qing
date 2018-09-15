@@ -3,7 +3,7 @@ import {Route,Link} from 'react-router-dom';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 
 import {QingHeader} from "../header/header";
-import { Instances } from "../cotent/instances";
+import { Instances } from "../cotent/instances/instances";
 import {Overr} from "../cotent/over";
 
 const {Header, Content, Footer, Sider} = Layout;
